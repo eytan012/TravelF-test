@@ -11,7 +11,7 @@ const ContactForm = ({addContact, isEdit, contactToEdit, setContactToEdit, addEd
     const [phoneNum, setPhoneNum] = useState('')
     const [desc, setDesc] = useState('')
 
-    // const api = `https://maps.googleapis.com/maps/api/geocode/json?address=${fullAddress + address}&key=AIzaSyAl0ftunfmNeaY9VuP01YHsZ_k4yp1wRBY`
+    // const api = `https://maps.googleapis.com/maps/api/geocode/json?address=${fullAddress + address}&key=MY_API_KEY`
 
     useEffect(() => {
         if (contactToEdit) {
