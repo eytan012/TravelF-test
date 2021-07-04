@@ -1,0 +1,101 @@
+body {
+    background-color: #f1f1f1;
+    font-family: Arial,sans-serif;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+i{
+    cursor: pointer;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+}
+
+.card {
+    padding: 5px;
+    margin: 10px;
+    background-color: #fdfdfd;
+    border: 1px solid #eaeaea;
+    display: flex;
+}
+
+.card span{
+    font-size: 14px;
+}
+.contactLocation{
+    margin: 5px;
+    font-size: 14px;
+}
+.leftProfileAndDesc {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    color: #666666;
+
+}
+
+.profileImg {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.centerDescription {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    color: #666666;
+}
+
+.editDeleteIcons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+.editDeleteIcons i{
+    padding: 5px;
+}
+
+.addContact {
+    padding-left: 10px;
+}
+.addIcon{
+    cursor: pointer;
+}
+
+.addContactForm{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+
+}
+.addContactForm input{
+    border: none;
+    padding: 7px;
+}
+.addBtn{
+    align-self: center;
+    border: none;
+    cursor: pointer;
+    background-color: #3b3b3b;
+    color: white;
+    padding: 7px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
